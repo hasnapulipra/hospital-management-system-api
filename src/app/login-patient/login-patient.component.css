@@ -1,0 +1,172 @@
+.loginsection{
+    position:relative;
+    width:100%;
+    height:100vh;
+    display: flex;
+}
+.loginsection .imgBx{
+    position:relative;
+    width:50%;
+    height:100%;
+}
+/* section .imgBx:before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: linear-gradient(225deg,#e91e63,#03a9f4);
+    z-index:1;
+    mix-blend-mode: screen;
+} */
+.loginsection .imgBx img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.loginsection .contentBx{
+    display:flex;
+    width:50%;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+}
+.loginsection .contentBx .formBx{
+    width:50%;
+
+}
+
+.loginsection .contentBx .formBx h2{
+    color:#607d8b;
+    font-weight:600;
+    font-size:1.5em;
+    text-transform:uppercase;
+    margin-bottom: 20px;
+    border-bottom:4px solid skyblue;
+    display:inline-block;
+    letter-spacing: 1px;
+}
+
+.loginsection .contentBx .formBx .inputBx{
+    margin-bottom: 20px;
+
+}
+.loginsection .contentBx .formBx .inputBx span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color:#607d8b;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.loginsection .contentBx .formBx .inputBx input{
+    width:100%;
+    padding:10px 20px;
+    outline:none;
+    font-weight: 400;
+    border:1px solid #607d8b;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color:#607d8b;
+    background: transparent;
+    border-radius: 5px;
+}
+.loginsection .contentBx .formBx .inputBx .signinbtn{
+    background: skyblue;
+    color: #fff;
+    outline:none;
+    border:none;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+.loginsection .contentBx .formBx .inputBx .signinbtn:hover{
+    background: steelblue;
+    color:white;
+}
+.loginsection .contentBx .formBx .remember{
+    margin-bottom: 10px;
+    color:#607d8b;
+    font-weight: 400;
+    font-size:14px;
+
+}
+.loginsection .contentBx .formBx .inputBx p{
+    color:#607d8b;
+
+}
+.loginsection .contentBx .formBx .inputBx p a{
+    color:skyblue;
+
+}
+
+/* section .contentBx{
+    background-color:#f8f8ff!important;
+} */
+
+@media (max-width:768px){
+    .loginsection .imgBx{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+
+    }
+    .loginsection .contentBx{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        height:100%;
+        z-index: 1;
+    }
+    .loginsection .contentBx .formBx{
+        width:100%;
+        padding:40px;
+        background: rgba(255 255 255 / 0.9);
+        margin: 50px;
+    }
+}
+
+.carousel-item{
+    /* height:100vh; */
+    min-height:300px;
+    background:no-repeat scroll center scroll;
+    -webkit-background-size:cover;
+    background-size: cover;
+}
+.carousel-item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    
+}
+/* background: black; */
+    /* opacity: 0.7; */
+
+.carousel-caption{
+    /* bottom:180px; */
+    padding-left:100px;
+    padding-right:100px;
+
+}
+.carousel-caption h5{
+    font-size:30px;
+    font-weight:700;
+   
+
+}
+.btn1{
+    background-color: red;
+    color:black;
+}

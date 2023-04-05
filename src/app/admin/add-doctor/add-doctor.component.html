@@ -1,0 +1,116 @@
+
+<div class="container">
+    <div class="content">
+        <h2 style="color:lightseagreen;">ADD NEW DOCTOR</h2><br><br>
+        <form action="" #myform = "ngForm" (ngSubmit)="submit(myform.value)">
+        <table class="table" border="none">
+            
+            <tbody>
+                <!-- <tr>
+                    <td data-label="Attribute"></td>
+                    <td data-label="Values"><img src="/assets/images/doctor-profile.jpg" alt="" width="40px;"></td>
+                </tr> -->
+                <tr>
+                    <td data-label="Attribute"><strong>NAME:</strong></td>
+                    <td data-label="Values" colspan="2"><input type="text" name="name" ngModel required #name="ngModel"></td>
+                    <!-- <div *ngIf="name?.touched && name?.invalid">
+                        <span *ngIf="name?.errors?.['required']" style="color:red;">*Please Enter Name</span>
+                    </div> -->
+                    <span *ngIf="name.touched && name.errors?.['required']" style="color:red;">*Please Enter name</span>
+
+                </tr>
+                <tr>
+                    <td data-label="Attribute"><strong>AGE:</strong></td>
+                    <td data-label="Values" colspan="2"><input type="text" name="age" ngModel required #age="ngModel"></td>
+                    <!-- <div *ngIf="age?.touched && age?.invalid">
+                        <span *ngIf="age?.errors?.['required']" style="color:red;">*Please Enter Age</span>
+                    </div> -->
+                    <span *ngIf="age.touched && age.errors?.['required']" style="color:red;">*Please Enter age</span>
+                    
+                </tr>
+                <tr>
+                  <td data-label="Attribute"><strong>GENDER:</strong></td>
+                  <td data-label="Values" colspan="2"><input type="radio" placeholder="gender" value="male" name="Gender">Male
+                    <input type="radio" placeholder="gender" value="female" name="Gender">Female</td>
+                  
+              </tr>
+                <tr>
+                    <td data-label="Attribute"><strong>SPECIALIZATION:</strong></td>
+                    <td data-label="Values" colspan="2"><input type="text" name="special" ngModel required #specialization="ngModel"></td>
+                    <!-- <div *ngIf="special?.touched && special?.invalid">
+                        <span *ngIf="special?.errors?.['required']" style="color:red;">*Please Enter Specialization</span>
+                    </div> -->
+                    <span *ngIf="specialization.touched && specialization.errors?.['required']" style="color:red;">*Please Enter specialization</span>
+                    
+                </tr>
+                <tr>
+                    <td data-label="Attribute"><strong>EXPERIENCE:</strong></td>
+                    <td data-label="Values" colspan="2"><input type="text" name="exp" ngModel required #exp="ngModel"></td>
+                    <!-- <div *ngIf="exp?.touched && exp?.invalid">
+                        <span *ngIf="exp?.errors?.['required']" style="color:red;">*Please Enter Experience</span>
+                    </div> -->
+                    <span *ngIf="exp.touched && exp.errors?.['required']" style="color:red;">*Please Enter experience</span>
+                    
+                </tr>
+                <tr>
+                    <td data-label="Attribute"><strong>LANGUAGE SPOKEN:</strong></td>
+                    <td data-label="Values" colspan="2"><input type="text" name="lan" ngModel required #lan="ngModel"></td>
+                    <!-- <div *ngIf="lan?.touched && lan?.invalid">
+                        <span *ngIf="lan?.errors?.['required']" style="color:red;">*Please Enter Languages Spoken</span>
+                    </div> -->
+                    <span *ngIf="lan.touched && lan.errors?.['required']" style="color:red;">*Please Enter language spoken</span>
+                </tr>
+                <tr>
+                    <td data-label="Attribute"><strong>MOBILE NO:</strong></td>
+                    <td data-label="Values" colspan="2"><input type="text" name="phone" ngModel required #phone="ngModel"></td>
+                    <!-- <div *ngIf="phone?.touched && phone?.invalid">
+                        <span *ngIf="phone?.errors?.['required']" style="color:red;">*Please Enter Contact Number</span>
+                    </div> -->
+                    <span *ngIf="phone.touched && phone.errors?.['required']" style="color:red;">*Please Enter phone</span>
+                    
+                </tr>
+                <tr>
+                    <td data-label="Attribute"><strong>EMAIL:</strong></td>
+                    <td data-label="Values" colspan="2"><input type="text" name="email" ngModel required #email="ngModel"></td>
+                    <!-- <div *ngIf="special?.touched && email?.invalid">
+                        <span *ngIf="email?.errors?.['required']" style="color:red;">*Please Enter Email</span>
+                    </div> -->
+                    <span *ngIf="email.touched && email.errors?.['required']" style="color:red;">*Please Enter email</span>
+
+                </tr>
+                <tr>
+                    <td data-label="Attribute"><strong>SCHEDULE:</strong></td>
+                    <td data-label="Values" colspan="2"><textarea id="" cols="22" rows="5" name="sdl" ngModel required #sdl="ngModel"></textarea></td>
+                    
+                    <!-- <div *ngIf="sdl?.touched && sdl?.invalid">
+                        <span *ngIf="sdl?.errors?.['required']" style="color:red;">*Please Enter Schedule</span>
+                    </div> -->
+                    <span *ngIf="sdl.touched && sdl.errors?.['required']" style="color:red;">*Please Enter schedule</span>
+
+                </tr>
+                <tr>
+                    <td data-label="Attribute"><strong>IMAGE:</strong></td>
+                    <td data-label="Values" colspan="2"><input type="file" name="image" ngModel required #image="ngModel"></td>
+                    <!-- <div *ngIf="image?.touched && image?.invalid">
+                        <span *ngIf="image?.errors?.['required']" style="color:red;">*Please Enter Image</span>
+                    </div> -->
+                    <span *ngIf="image.touched && image.errors?.['required']" style="color:red;">*Please Enter image</span>
+
+                </tr>
+                
+                <tr>
+                    <!-- <td colspan="2" class="button_row"><a [routerLink]="'add-doctor'"><button class="btn" [disabled]="myform.invalid">Add Doctor</button></a></td> -->
+                    <td colspan="2" class="button_row"><button class="btn" [disabled]="myform.invalid">Add Doctor</button></td>
+                    
+                </tr>
+                
+                
+                
+    
+            </tbody>
+        </table>
+        </form>
+        
+    </div>
+</div>
+

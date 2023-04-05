@@ -1,0 +1,93 @@
+.container{
+    position: absolute;
+    right: 10%;
+    width: 58vw;
+    /* height: 100vh; */
+    background: white;
+    margin-top: 14%;
+}
+.container .content{
+    position: relative;
+    margin-top: 0vh;
+    min-height: 90vh;
+    /* background: #f1f1f1; */
+}
+h2{
+    font-size: 1.8em!important;
+    font-family: 'Poppins', sans-seriff!important;
+}
+h6{
+    font-size: 1rem!important;
+    font-family: 'Poppins', sans-seriff!important;
+  }
+.btn{
+    color:white;
+    background-color:rgb(19, 187, 179);
+  }
+  .btn:hover{
+    color:white;
+    background: rgb(19, 187, 179);
+    padding:3px 8px;
+    border:2px solid white;
+  }
+ .table{
+   
+    border-collapse:collapse;
+}
+ .table td,.table th{
+    padding:12px 15px;
+    border:1px solid #ddd;
+    text-align: left;
+    
+    font-size:16px;
+}
+/* .table td{
+    color:#607d8b;
+} */
+tbody tr:hover{
+    background: lightseagreen;
+    color:white;
+}
+
+ 
+
+input[type="text"]{
+    width: 60%;
+}
+@media(max-width:768px){
+    h2{
+        font-size: 18px;
+    }
+    
+}
+@media(max-width:958px){
+    
+     .table td, .table th{
+        font-size:12px;
+    } 
+}
+
+
+
+
+
+@media(max-width:425px){
+ .table {
+    margin-left: 0%;
+    width: 80%;
+    border-collapse: collapse;
+}
+ h2 {
+    font-size: 14px;
+    
+}
+.container{
+    margin-top: 25%;
+}
+input[type="text"]{
+    width:100%;
+    font-size: 13px;
+}
+
+}
+

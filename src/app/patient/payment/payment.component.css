@@ -1,0 +1,82 @@
+
+ .container{
+    position: absolute;
+    right: 10%;
+    width: 58vw;
+    /* height: 100vh; */
+    background: white;
+    margin-top: 5%;
+}
+.container .content{
+    position: relative;
+    margin-top: 0vh;
+    min-height: 90vh;
+    /* background: #f1f1f1; */
+}
+.btn{
+    background-color: lightseagreen;
+    color:white;
+}
+.btn:hover{
+    color:lightseagreen;
+    background: white;
+    padding:3px 8px;
+    border:2px solid lightseagreen;
+}
+ .container form{
+    padding:20px;
+    /* width:70%; */
+    
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    /* margin-left: 20%; */
+}
+.container form .title{
+
+    font-size:20px;
+    color:#607d8b;
+    text-transform: uppercase;
+
+}
+ .container form .inputbox{
+    margin:15px 0;
+    
+
+}
+ .container form .inputbox span{
+    margin-bottom: 10px;
+    display:block;
+    color:#607d8b;
+}
+ .container form .inputbox input{
+    width:100%;
+    border:1px solid #ccc;
+    /* border-color: #607d8b; */
+    padding:10px 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+ button{
+    background-color:lightseagreen;
+    color: beige;
+    border:none;
+    padding: 8px;
+    cursor: pointer;
+}
+ .container form .inputbox input:focus{
+    border-color: #607d8b;
+}
+
+/* .payment_section .container form img{
+    height:34px;
+    margin-top: 5px;
+    filter:drop-shadow(0 0 1px #000)
+} */
+.button:hover{
+    background-color: lightseagreen;
+}
+@media(max-width:762px){
+    
+    .container form img{
+        width:50%;
+    }
+}

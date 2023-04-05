@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="content">
+        <h2 style="color:lightseagreen;">APPOINMENT HISTORY</h2><br><br>
+        <h4 style="color:lightseagreen;">Completed Bookings</h4><br><br>
+        <table class="table" border="1px solid">
+            <thead>
+                
+                    <th>Ref No</th>
+                    <th>Patient Name</th>
+                    <th>Doctor Name</th>
+                    <th>Dept</th>
+                    <th>Consultant Fee</th>
+                    <th>View Reciept</th>
+                    <th>Action</th>
+                    
+                
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Ref No">13456</td>
+                    <td data-label="Patient Name">Rahul</td>
+                    <td data-label="Doctor Name">Dr. Ananya</td>
+                    <td data-label="Dept">ENT</td>
+                    <td data-label="Consultant Fee">500.00</td>
+                    <td data-label="View Reciept"><a [routerLink]="'/receipt-of-payment'" style="text-decoration:none;">View</a></td>
+                    <td data-label="Cancel"><a href="" style="text-decoration:none;">Delete</a></td>
+                   
+                </tr>
+                
+            </tbody>
+            
+        </table><br><br>
+
+
+        <h4 style="color:lightseagreen;">Cancelled Bookings</h4><br><br>
+        <table class="table" border="1px solid">
+            <thead>
+                
+                    <th>Ref No</th>
+                    <th>Patient Name</th>
+                    <th>Doctor Name</th>
+                    <th>Dept</th>
+                    <th>Consultant Fee</th>
+                    <th>Action</th>
+                    
+                
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Ref No">13456</td>
+                    <td data-label="Patient Name">Rahul</td>
+                    <td data-label="Doctor Name">Dr. Mohit</td>
+                    <td data-label="Dept">GM</td>
+                    <td data-label="Consultant Fee">500.00</td>
+                    <td data-label="Action"><a href="" style="text-decoration:none;">Delete</a></td>
+                
+                </tr>
+                
+            </tbody>
+            
+        </table>
+    </div>
+</div>

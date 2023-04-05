@@ -1,0 +1,192 @@
+
+
+<div class="container">
+    <div class="content">
+        <h3 style="color:lightseagreen;">VIEW APPOINMENTS</h3><br>
+        
+        Date Picker: <input type="date" [(ngModel)]="dateSelected">&nbsp;&nbsp;&nbsp;
+        <button (click)="fetchDateSelected()" class="btn btn-md">Search</button><br><br>
+
+
+
+
+        <!-- <div class="month">
+            <ul>
+              <li class="prev">&#10094;</li>
+              <li class="next">&#10095;</li>
+              <li>August<br><span style="font-size:18px">2021</span></li>
+            </ul>
+        </div>
+          
+          <ul class="weekdays">
+            <li>Mo</li>
+            <li>Tu</li>
+            <li>We</li>
+            <li>Th</li>
+            <li>Fr</li>
+            <li>Sa</li>
+            <li>Su</li>
+          </ul>
+          
+          <ul class="days">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li><span class="active">10</span></li>
+            <li>11</li>
+            ...etc
+          </ul> -->
+
+
+
+
+
+
+            <br><br>
+            <h6 *ngIf="showDate">{{dateSelected}}</h6>
+            
+        
+        
+        <table class="table" border="1px solid grey" *ngIf="showTable1">
+            <thead>
+                <tr>
+                    <th>Ref No.</th>
+                    <th>Name</th>
+                    <th>Schedule</th>
+                    <th>Status</th>
+                    <th>cancel</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    
+                    <td data-label="Values">987654</td>
+                    <td data-label="Values">Akash</td>
+                    <td data-label="Values">4:30PM</td>
+                    <td data-label="Values">Confirmed</td>
+                    <td data-label="Values"><a href=""><i class="fa fa-ban" aria-hidden="true"></i></a></td>
+                </tr>
+                <tr>
+                    
+                    <td data-label="Values">987786</td>
+                    <td data-label="Values">Rohan</td>
+                    <td data-label="Values">4:40PM</td>
+                    <td data-label="Values">Confirmed</td>
+                    <td data-label="Values"><a href=""><i class="fa fa-ban" aria-hidden="true"></i></a></td>
+                </tr>
+                <tr>
+                    
+                    <td data-label="Values">987865</td>
+                    <td data-label="Values">Gafoor</td>
+                    <td data-label="Values">4:50PM</td>
+                    <td data-label="Values">Confirmed</td>
+                    <td data-label="Values"><a href=""><i class="fa fa-ban" aria-hidden="true"></i></a></td>
+                </tr>
+                
+                
+    
+            </tbody>
+        </table>
+
+        <table class="table" border="1px solid grey" *ngIf="showTable2">
+            <thead>
+                <tr>
+                    <th>Ref No.</th>
+                    <th>Name</th>
+                    <th>Schedule</th>
+                    <th>Status</th>
+                    <th>cancel</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    
+                    <td data-label="Values">13456</td>
+                    <td data-label="Values">Rahul</td>
+                    <td data-label="Values">2:30PM</td>
+                    <td data-label="Values">Confirmed</td>
+                    <td data-label="Values"><a href=""><i class="fa fa-ban" aria-hidden="true"></i></a></td>
+                </tr>
+                <tr>
+                    
+                    <td data-label="Values">345267</td>
+                    <td data-label="Values">Ajith</td>
+                    <td data-label="Values">2:40PM</td>
+                    <td data-label="Values">Confirmed</td>
+                    <td data-label="Values"><a href=""><i class="fa fa-ban" aria-hidden="true"></i></a></td>
+                </tr>
+                <tr>
+                    
+                    <td data-label="Values">987543</td>
+                    <td data-label="Values">Thara</td>
+                    <td data-label="Values">2:50PM</td>
+                    <td data-label="Values">Confirmed</td>
+                    <td data-label="Values"><a href=""><i class="fa fa-ban" aria-hidden="true"></i></a></td>
+                </tr>
+                
+                
+    
+            </tbody>
+        </table>
+
+        <table class="table" border="1px solid grey" *ngIf="showTable3">
+            <thead>
+                <tr>
+                    <th>Ref No.</th>
+                    <th>Name</th>
+                    <th>Schedule</th>
+                    <th>Status</th>
+                    <th>cancel</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    
+                    <td data-label="Values">67543</td>
+                    <td data-label="Values">Sana</td>
+                    <td data-label="Values">3:30PM</td>
+                    <td data-label="Values">Confirmed</td>
+                    <td data-label="Values"><a href=""><i class="fa fa-ban" aria-hidden="true"></i></a></td>
+                </tr>
+                <tr>
+                    
+                    <td data-label="Values">765438</td>
+                    <td data-label="Values">Maneesh</td>
+                    <td data-label="Values">3:40PM</td>
+                    <td data-label="Values">Confirmed</td>
+                    <td data-label="Values"><a href=""><i class="fa fa-ban" aria-hidden="true"></i></a></td>
+                </tr>
+                <tr>
+                    
+                    <td data-label="Values">765432</td>
+                    <td data-label="Values">Ardra</td>
+                    <td data-label="Values">3:50PM</td>
+                    <td data-label="Values">Confirmed</td>
+                    <td data-label="Values"><a href=""><i class="fa fa-ban" aria-hidden="true"></i></a></td>
+                </tr>
+                <tr>
+                    
+                    <td data-label="Values">654378</td>
+                    <td data-label="Values">Jasmine</td>
+                    <td data-label="Values">4:00PM</td>
+                    <td data-label="Values">Confirmed</td>
+                    <td data-label="Values"><a href=""><i class="fa fa-ban" aria-hidden="true"></i></a></td>
+                </tr>
+                
+                
+    
+            </tbody>
+        </table>
+       
+        
+    </div>
+</div>

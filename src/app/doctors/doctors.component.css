@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+    /* font-family: 'Poppins', sans-seriff; */
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+h1{
+    color:whitesmoke;
+}
+h2{
+    color:white;
+
+}
+.btn{
+    background: lightseagreen;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+}
+.btn:hover{
+    color:lightseagreen;
+    background: white;
+    padding:3px 8px;
+    border:2px solid lightseagreen;
+}
+.side-menu{
+    position:fixed;
+    background: lightseagreen;
+    width:23.7vw;;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.side-menu .brand-name{
+    height:10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    line-height: 60px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid #fff;
+}
+.side-menu .brand-name h1{
+    font-size: calc(1.375rem + 1.5vw)!important;
+    font-family: 'Poppins', sans-seriff!important;
+}
+.side-menu li{
+    font-size: 24px;
+    padding: 10px 40px;
+    color:white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.side-menu li:hover{
+    background: white;
+    color:lightseagreen;
+}
+.container{
+    position: absolute;
+    right: 0;
+    width: 75vw;
+    
+    height: 15vh;
+    background: white;
+}
+.container .header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* width: 76.2%; */
+    width: 75vw;
+    height: 10vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
+    z-index: 1;
+}
+.container .header .nav{
+    width:90%;
+    display:flex;
+    align-items: center;
+}
+.header .nav h2{
+    font-size: calc(1.325rem + .9vw)!important;
+    font-family: 'Poppins', sans-seriff!important;
+}
+.container .header .nav .user{
+    flex:1;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.container .header .nav .user .img-case{
+    position:relative;
+    width:50px;
+    height:50px;
+
+}
+.container .header .nav .user .img-case img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+}
+@media screen and (max-width: 1050px){
+    .side-menu li{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 940px){
+    .side-menu li span{
+        display:none;
+
+    }
+    .side-menu{
+        align-items: center;
+    }
+    .side-menu li img{
+        width:30px;
+        height:30px;
+    }
+    .side-menu li:hover{
+        /* background: lightseagreen; */
+        /* padding: 8px 38px; */
+        border:2px solid white;
+    }
+}
+@media screen and (max-width: 536px){
+    .brand-name h1{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 425px){
+    .hospital{
+        display: none;
+    }
+    .container .header{
+        width: 82%;
+    }
+    @media screen and (max-width: 375px){
+        
+        .container .header{
+            width: 85%;
+        }
+}
+}

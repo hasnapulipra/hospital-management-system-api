@@ -1,0 +1,157 @@
+
+
+<div class="container">
+    <div class="content">
+        <h2 style="color:lightseagreen;">PAYMENT REQUESTS</h2>
+        Date Picker: <input type="date" [(ngModel)]="dateSelected">&nbsp;&nbsp;&nbsp;
+        <button (click)="fetchDateSelected()" class="btn btn-md">Search</button><br><br>
+        <br><br>
+        <h6 *ngIf="showDate">{{dateSelected}}</h6>
+
+        <table class="table" border="none" *ngIf="showTable1">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Ref No</th>
+                    <th>Patient Name</th>
+                    <th>Doctor Name</th>
+                    <th>Consultant Fee</th>
+                    <th>Status</th>
+                    <!-- <th>Generate Receipt and Upload</th> -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Attribute">1</td>
+                    <td data-label="Values">13456</td>
+                    <td data-label="Values">Rahul</td>
+                    <td data-label="Values">Dr. Ananya</td>
+                    <td data-label="Attribute">600.00</td>
+                    <td data-label="Values"><input type="text" placeholder="Verified" style="border:none;"></td>
+                    <!-- <td data-label="Values"><input type="text" placeholder="Done" style="border:none;"></td> -->
+                </tr>
+                <tr>
+                    <td data-label="Attribute">2</td>
+                    <td data-label="Values">65432</td>
+                    <td data-label="Values">Revathi</td>
+                    <td data-label="Values">Dr. Mohit</td>
+                    <td data-label="Attribute">600.00</td>
+                    <td data-label="Values"><input type="text" placeholder="Verified" style="border:none;"></td>
+                    <!-- <td data-label="Values"><input type="text" placeholder="Done" style="border:none;"></td> -->
+                </tr>
+                <tr>
+                    <td data-label="Attribute">3</td>
+                    <td data-label="Values">76543</td>
+                    <td data-label="Values">Ramu</td>
+                    <td data-label="Values">Dr. Ananya</td>
+                    <td data-label="Attribute">600.00</td>
+                    <td data-label="Values"><input type="text" placeholder="Verified" style="border:none;"></td>
+                    <!-- <td data-label="Values"><input type="text" placeholder="Done" style="border:none;"></td> -->
+                </tr>
+               
+
+                
+                
+                
+    
+            </tbody>
+        </table>
+
+        <table class="table" border="none" *ngIf="showTable2">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Ref No</th>
+                    <th>Patient Name</th>
+                    <th>Doctor Name</th>
+                    <th>Consultant Fee</th>
+                    <th>Status</th>
+                    <!-- <th>Generate Receipt and Upload</th> -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Attribute">1</td>
+                    <td data-label="Values">87654</td>
+                    <td data-label="Values">Meera</td>
+                    <td data-label="Values">Dr. Abid</td>
+                    <td data-label="Attribute">600.00</td>
+                    <td data-label="Values"><input type="text" placeholder="Verified" style="border:none;"></td>
+                    <!-- <td data-label="Values"><input type="text" placeholder="Done" style="border:none;"></td> -->
+                </tr>
+                <tr>
+                    <td data-label="Attribute">2</td>
+                    <td data-label="Values">98765</td>
+                    <td data-label="Values">Bhavya</td>
+                    <td data-label="Values">Dr. Kavitha</td>
+                    <td data-label="Attribute">600.00</td>
+                    <td data-label="Values"><input type="text" placeholder="Verified" style="border:none;"></td>
+                    <!-- <td data-label="Values"><input type="text" placeholder="Done" style="border:none;"></td> -->
+                </tr>
+                <tr>
+                    <td data-label="Attribute">3</td>
+                    <td data-label="Values">87654</td>
+                    <td data-label="Values">Mohan</td>
+                    <td data-label="Values">Dr. Abid</td>
+                    <td data-label="Attribute">600.00</td>
+                    <td data-label="Values"><input type="text" placeholder="Verified" style="border:none;"></td>
+                    <!-- <td data-label="Values"><input type="text" placeholder="Done" style="border:none;"></td> -->
+                </tr>
+
+                
+                
+                
+    
+            </tbody>
+        </table>
+
+        <table class="table" border="none" *ngIf="showTable3">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Ref No</th>
+                    <th>Patient Name</th>
+                    <th>Doctor Name</th>
+                    <th>Consultant Fee</th>
+                    <th>Status</th>
+                    <!-- <th>Generate Receipt and Upload</th> -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Attribute">1</td>
+                    <td data-label="Values">765443</td>
+                    <td data-label="Values">Jhon</td>
+                    <td data-label="Values">Dr. Kavitha</td>
+                    <td data-label="Attribute">600.00</td>
+                    <td data-label="Values"><input type="text" placeholder="Verified" style="border:none;"></td>
+                    <!-- <td data-label="Values"><input type="text" placeholder="Done" style="border:none;"></td> -->
+                </tr>
+                <tr>
+                    <td data-label="Attribute">1</td>
+                    <td data-label="Values">13456</td>
+                    <td data-label="Values">Rahul</td>
+                    <td data-label="Values">Dr. Ananya</td>
+                    <td data-label="Attribute">600.00</td>
+                    <td data-label="Values"><input type="text" placeholder="Verified" style="border:none;"></td>
+                    <!-- <td data-label="Values"><input type="text" placeholder="Done" style="border:none;"></td> -->
+                </tr>
+                <tr>
+                    <td data-label="Attribute">1</td>
+                    <td data-label="Values">87654</td>
+                    <td data-label="Values">Manu</td>
+                    <td data-label="Values">Dr. Abid</td>
+                    <td data-label="Attribute">600.00</td>
+                    <td data-label="Values"><input type="text" placeholder="Verified" style="border:none;"></td>
+                    <!-- <td data-label="Values"><input type="text" placeholder="Done" style="border:none;"></td> -->
+                </tr>
+
+                
+                
+                
+    
+            </tbody>
+        </table>
+        
+    </div>
+</div>

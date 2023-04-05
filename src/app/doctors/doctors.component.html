@@ -1,0 +1,40 @@
+
+    <!-- <h2>Patient Home page</h2> -->
+    <div class="side-menu">
+        <div class="brand-name">
+            <h1>Doctor</h1>
+        </div>
+        <ul>
+            <li class="nav-item">
+                <a [routerLink]="'doctors-dashboard'" class="nav-link"><img src="/assets/images/dashboard.png" alt="" width="16%">&nbsp;&nbsp;<span>Dashboard</span></a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="'view-profile'" class="nav-link"><img src="/assets/images/view-profile.jpg" alt="" width="16%">&nbsp;&nbsp;<span>View Profile</span></a>
+                
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="'my-appoinments'" class="nav-link"><img src="/assets/images/book-appoinment.jpg" alt="" width="12%">&nbsp;&nbsp;&nbsp;<span>My Appoinments</span></a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="'add-prescription'" class="nav-link"><img src="/assets/images/payment-receipt.png" alt="" width="16%">&nbsp;<span>Add Prescription</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="user">
+                    <div class="img-case">
+                        <img src="/assets/images/user.png" alt="">
+                    </div>
+                    <h2 style="color:lightseagreen;" class="hospital">Hospital Management System</h2>
+                    <a href="" class="btn">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <router-outlet></router-outlet>
+    
+

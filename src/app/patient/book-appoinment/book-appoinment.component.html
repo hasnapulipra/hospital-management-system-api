@@ -1,0 +1,75 @@
+<div class="container">
+    <div class="content">
+        <h2 style="color:lightseagreen;">PATIENT BOOK APPOINMENT</h2><br><br>
+        <table class="table" border="none">
+            
+            <tbody>
+                <tr>
+                    <td data-label="Attribute">Select Department:</td>&nbsp;
+                    <select name="" id="" style="width:50%;">
+                        <option value="">ENT</option>
+                        <option value="" selected>Pediatrician</option>
+                        <option value="">General Medicine</option>
+                        <option value="">Cardiologist</option>
+                        <option value="">Psychiatrist</option>
+                    </select>
+                    <!-- <td data-label="Values"><input type="text"></td> -->
+                </tr>
+                <tr>
+                    <td data-label="Attribute">Select Doctor's Name:</td>&nbsp;
+                    <select name="" id="" style="width:50%;" (change)="displayFee()">
+                        <option value=""> Dr. Ananya</option>
+                        <option value="" selected>Dr. Abid</option>
+                        <option value="">Dr. Mohit</option>
+                        <option value="">Dr. Raju</option>
+                        <option value="">Dr. kavitha</option>
+                    </select>
+                   <!-- <button (click)="displayFee()">click</button> -->
+                </tr>
+                <tr *ngIf="showFee">
+                  <td data-label="Attribute">Consultant Fee:</td>
+                  <td data-label="Values" style="color:black;">600</td>
+              </tr>
+                <tr>
+                    <td data-label="Attribute">Date:</td>
+                    <td data-label="Values"><input type="date" placeholder="14/02/2023" [(ngModel)]="dateSelected" (change)="displayAvalDate()" style="width:53%;"></td>
+                </tr>
+                <tr *ngIf="showavalDate">
+                    <td data-label="Attribute">Next Available Date:</td>
+                    <td data-label="Values">Wed,Feb 21</td>
+                </tr>
+                <tr *ngIf="showavalSlots">
+                    <td data-label="Attribute">Available Slots:</td>
+                    
+                </tr>
+                <tr *ngIf="showSlots1">
+                    <td data-label="Attribute"><button (click)="book()">12:00 pm</button></td>
+                    <td data-label="Values"><button (click)="book()">1:00 pm</button></td>
+                    <td data-label="Values"><button (click)="book()">1:10 pm</button></td>
+                    <td data-label="Values"><button (click)="book()">1:20 pm</button></td>
+                </tr>
+                <tr *ngIf="showSlots2">
+                    <td data-label="Values"><button (click)="book()">1:30 pm</button></td>
+                    <td data-label="Values"><button (click)="book()">1:40 pm</button></td>
+                    <td data-label="Values"><button (click)="book()">1:50 pm</button></td>
+                    <td data-label="Values"><button (click)="book()">2:00 pm</button></td>
+                    
+                </tr>
+                <!-- <tr>
+                    <td data-label="Attribute">Time:</td>
+                    <td data-label="Values"><input type="time"></td>
+                </tr> -->
+                
+                
+               
+                <tr *ngIf="bookbutton">
+                    <td class="button_row"><a [routerLink]="'/payment'"><button class="btn btn-sm">Book Appoinment</button></a></td>
+                    <!-- <td class="button_row"><a href=""><button class="btn btn-sm">Edit Appoinment</button></a></td> -->
+                </tr>
+                
+                
+    
+            </tbody>
+        </table>
+    </div>
+</div>

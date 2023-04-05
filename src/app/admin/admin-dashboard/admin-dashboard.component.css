@@ -1,0 +1,187 @@
+*{
+   
+    /* font-family: 'Poppins', sans-seriff; */
+}
+.container{
+    position: absolute;
+    right: 10%;
+    width: 58vw;
+    
+    background: white;
+    margin-top: 10%;
+}
+.container .content{
+    position: relative;
+    margin-top: 0vh;
+    min-height: 90vh;
+    
+}
+.last-appoinments h2 {
+    font-size: calc(1.325rem + .9vw)!important;
+    font-family: 'Poppins', sans-seriff!important;
+}  
+
+/* .container .content .cards{
+    padding:20px 15px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container .content .cards .card{
+    width:250px;
+    height:180px;
+   
+    margin:20px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1),0 6px 20px 0 rgba(0,0,0,0.19);
+    border:none;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+h3{
+    color:#444;
+}
+.card-content{
+    padding:12px 12px;
+}
+
+
+@media screen and (max-width: 536px){
+    .container .content .cards{
+        justify-content: center;
+    }
+    .side-menu li img{
+        width:30px;
+        height: 30px;
+        
+    }
+} */
+
+
+
+.cards{
+    
+    width:100%;
+    padding:35px 20px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:20px;
+}
+.cards .card{
+    background: lightseagreen;
+    padding:20px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
+.number{
+    font-size:35px;
+    font-weight:500px;
+    color:#fff;
+}
+.card-name{
+    color:#444;
+    font-weight: 600;
+
+}
+.icon-box i{
+    font-size: 45px;
+    color:#444;
+}
+.tables{
+    width:100%;
+    align-items: self-start;
+    /* padding: 0 20px 20px 20px; */
+}
+.last-appoinments{
+    min-height: 35px;
+    background: #fff;
+    padding:20px;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2)
+}
+.heading{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#444;
+}
+table{
+    margin-top: 10px;
+    width:100%;
+    border-collapse: collapse;
+
+}
+thead td{
+    font-weight: 600;
+    color:#333;
+
+}
+table tr{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+tbody tr:hover{
+    background:lightseagreen;
+    color:#fff;
+}
+table tbody tr:last-child{
+    border-bottom:none;
+}
+.last-appoinments table tbody td:last-child{
+white-space: nowrap;
+}
+td{
+    padding:9px 5px;
+}
+td i{
+    padding:7px;
+    color:#fff;
+    border-radius:50px;
+
+}
+.fa-trash-alt{
+    background: lightseagreen;
+}
+@media(max-width:1090px){
+    .sidebar{
+        width:60px;
+    }
+    .main{
+        width: calc(100% - 60px);
+        left:60px;
+    }
+}
+@media(max-width:860px){
+    .cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media(max-width:530px){
+    .cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .last-appoinments td:nth-child(3){
+        display:none;
+    }
+}
+@media(max-width:420px){
+    
+    .last-appoinments{
+        font-size: 70%;
+        padding:10px;
+        min-height: 200px;
+    }
+    .cards, .tables{
+        padding:10px;
+    }
+    .last-appoinments h2{
+        font-size:20px;
+    }
+}
+@media(max-width:320px){
+table td{
+    padding:0px;
+}
+}

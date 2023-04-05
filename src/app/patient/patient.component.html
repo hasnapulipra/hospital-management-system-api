@@ -1,0 +1,69 @@
+
+    <!-- <h2>Patient Home page</h2> -->
+    <div class="side-menu">
+        <div class="brand-name">
+            <h1>Patient</h1>
+            
+        </div>
+        <ul>
+            <li class="nav-item">
+                <a [routerLink]="'patient-dashboard'" class="nav-link"><img src="/assets/images/dashboard.png" alt="" width="16%">&nbsp;&nbsp;<span>Dashboard</span></a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="'view-profile'" class="nav-link"><img src="/assets/images/view-profile.jpg" alt="" width="16%">&nbsp;&nbsp;<span>View Profile</span></a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="'update-profile'" class="nav-link"><img src="/assets/images/update_profile.png" alt="" width="12%">&nbsp;&nbsp;&nbsp;<span>Update Profile</span></a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="'view-doctor'" class="nav-link"><i class="fa fa-user-md" aria-hidden="true" style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i><span>View Doctors</span></a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="'book-appoinment'" class="nav-link"><img src="/assets/images/book-appoinment.jpg" alt="" width="15%">&nbsp;&nbsp;<span>Book Appoinment</span></a>
+            </li>
+            
+            <!-- <li class="nav-item">
+                <a [routerLink]="'payment'" class="nav-link"><i class="fa fa-credit-card" aria-hidden="true" style="color:black;"></i>&nbsp;&nbsp;&nbsp;<span>Payment</span></a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="'receipt-of-payment'" class="nav-link"><img src="/assets/images/payment-receipt.png" alt="" width="16%">&nbsp;&nbsp;<span>Payment Receipt</span></a>
+            </li> -->
+            <li class="nav-item">
+                <a [routerLink]="'appoinment-status'" class="nav-link"><img src="/assets/images/appoinment-status.png" alt="" width="15%">&nbsp;&nbsp;<span>Appoinment Status</span></a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="'appoinment-history'" class="nav-link"><img src="/assets/images/book-appoinment.jpg" alt="" width="15%">&nbsp;&nbsp;<span>Appoinment History</span></a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="'treatment-history'" class="nav-link"><i class="fas fa-briefcase-medical" style="color: black;"></i>&nbsp;&nbsp;<span>Treatment History</span></a>
+            </li>
+    
+    
+    
+            <!-- <li><a [routerLink]="'patient-dashboard'"><img src="/assets/images/dashboard.png" alt="" width="16%">&nbsp;&nbsp;Dashboard</a></li> -->
+            <!-- <li><img src="/assets/images/view-profile.jpg" alt="" width="16%">&nbsp;&nbsp;View Profile</li> -->
+            <!-- <li><img src="/assets/images/update_profile.png" alt="" width="12%">&nbsp;&nbsp;&nbsp;Update Profile</li> -->
+            <!-- <li><i class="fa fa-user-md" aria-hidden="true" style="color:black;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;View Doctors</li> -->
+            <!-- <li><img src="/assets/images/book-appoinment.jpg" alt="" width="15%">&nbsp;&nbsp;Book Appoinment</li> -->
+            <!-- <li><img src="/assets/images/appoinment-status.png" alt="" width="15%">&nbsp;&nbsp;Appoinment Status</li> -->
+            <!-- <li><i class="fa fa-credit-card" aria-hidden="true" style="color:black;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Payment</li> -->
+            <!-- <li><img src="/assets/images/payment-receipt.png" alt="" width="16%">&nbsp;&nbsp;Payment Receipt</li> -->
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="user">
+                    
+                    <div class="img-case">
+                        <img src="/assets/images/user.png" alt="">
+                    </div>
+                    <h2 style="color:lightseagreen;" class="hospital">Hospital Management System</h2>
+                    <a href="" class="btn">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <router-outlet></router-outlet>
+    

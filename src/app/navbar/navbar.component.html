@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-md navbar-light py-1" style="background-color:rgb(19, 187, 179);">
+    <div class="container">
+        <a href="#" class="navbar-brand"><img src="/assets/images/icon.png" alt="" height="70"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarmenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarmenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a [routerLink]="'/home'" class="nav-link" style="color:white;"><i class="fa-sharp fa-solid fa-home"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                    <a [routerLink]="'/about'" class="nav-link" style="color:white;"><i class="fa-sharp fa-solid fa-user"></i>About</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a [routerLink]="'/contact'" class="nav-link" style="color:white;"><i class="fa-sharp fa-solid fa-phone"></i>Contact</a>
+                </li> -->
+                <li class="nav-item">
+                    <a [routerLink]="'/register'" class="nav-link" style="color:white;">Register</a>
+                </li>
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn btn-sm">Log In</button>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" [routerLink]="'/login'">Admin</a></li>
+                      <li><a class="dropdown-item" [routerLink]="'/loginDoctor'">Doctor</a></li>
+                      <li><a class="dropdown-item" [routerLink]="'/loginPatient'">Patient</a></li>
+                    </ul>
+                </li>
+
+
+                <!-- <li class="nav-item">
+
+                    
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" [routerLink]="'/login'">Admin</a></li>
+                      <li><a class="dropdown-item" [routerLink]="'/loginDoctor'">Doctor</a></li>
+                      <li><a class="dropdown-item" [routerLink]="'/loginPatient'">Patient</a></li>
+                    </ul> -->
+                    <!-- <a [routerLink]="'/loginPatient'"><button class="btn btn-sm">Log In</button></a> -->
+                    
+                <!-- </li> -->
+            </ul>
+        </div>
+    </div>
+</nav>
+

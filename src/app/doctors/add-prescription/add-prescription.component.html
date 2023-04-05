@@ -1,0 +1,55 @@
+
+<div class="container">
+    <div class="content">
+        <h2 style="color:lightseagreen;">ADD PRESCRIPTION</h2><br><br>
+        <div class="doctor-profile">
+            <h4>Enter Ref No: <input type="text" placeholder="13456"></h4>
+
+            
+        </div><br>
+        <h4 style="text-align: center;">Ref No: 13456</h4>
+        <table class="table" border="none">
+            
+            <tbody>
+                <!-- <tr>
+                    <td data-label="Attribute"></td>
+                    <td data-label="Values"><img src="/assets/images/doctor-profile.jpg" alt="" width="40px;"></td>
+                </tr> -->
+                <tr>
+                    <td data-label="Attribute"><strong>Patient Name:</strong></td>
+                    <td data-label="Values" colspan="2">Rahul</td>
+                </tr>
+                <tr>
+                    <td data-label="Attribute"><strong>Treatment Name:</strong></td>
+                    <td data-label="Values" colspan="2"><input type="text" placeholder="Nose Problem"></td>
+                </tr>
+                <tr>
+                  <td data-label="Attribute"><strong>Prescription:</strong></td>
+                  <!-- <td data-label="Values" colspan="2"><input type="text" placeholder="Fluticasone/Mometasone Nose Spray"></td> -->
+                  <td data-label="Values" colspan="2"><textarea name="" id="" cols="40" rows="5" placeholder="Fluticasone/Mometasone Nose Spray"></textarea></td>
+                  
+                </tr>
+                <tr>
+                    <td data-label="Attribute"><strong>Remark:</strong></td>
+                    <td data-label="Values" colspan="2"><input type="text" placeholder="Use at Bedtime"></td>
+                </tr>
+                <tr>
+                    <td data-label="Attribute"><strong>Advice:</strong></td>
+                    <!-- <td data-label="Values" colspan="2"><input type="text" placeholder="You don't get the full effect for several days or even a week,But if you use it daily,it'll be incredibly effective."></td> -->
+                    <td data-label="Values" colspan="2"><textarea name="" id="" cols="40" rows="5" placeholder="You don't get the full effect for several days or even a week,But if you use it daily,it'll be incredibly effective."></textarea></td>
+                    
+                </tr>
+                
+                <tr>
+                    <td colspan="2" class="button_row"><a [routerLink]="'add-prescription'"><button class="btn">Add Prescription</button></a></td>
+                </tr>
+                
+                
+                
+    
+            </tbody>
+        </table>
+        
+        
+    </div>
+</div>

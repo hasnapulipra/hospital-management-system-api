@@ -1,0 +1,96 @@
+
+    
+    <div class="side-menu">
+        <div class="brand-name">
+            <h1>Admin</h1>
+            <!-- <hr style="color:white;"> -->
+        </div>
+        <ul>
+            <li class="nav-item">
+                <a [routerLink]="'admin-dashboard'" class="nav-link"><img src="/assets/images/dashboard.png" alt="" width="16%">&nbsp;&nbsp;<span>Dashboard</span></a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="'view-profile'" class="nav-link"><img src="/assets/images/view-profile.jpg" alt="" width="16%">&nbsp;&nbsp;<span>View Profile</span></a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="'add-doctor'" class="nav-link"><i class="fa fa-stethoscope" aria-hidden="true" style="width:40px;color:black;"></i>&nbsp;<span>Add Doctor</span></a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="'update-doctor-details'" class="nav-link"><i class="fa fa-user-md" aria-hidden="true" style="width:40px;color:black;"></i>&nbsp;<span>Update Doctor</span></a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="'view-doctors'" class="nav-link"><i class="fa fa-user-md" aria-hidden="true" style="width:40px;color:black;"></i>&nbsp;<span>View Doctors</span></a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="'payment-request'" class="nav-link"><img src="/assets/images/payment-receipt.png" alt="" width="10%">&nbsp;&nbsp;&nbsp;<span>Payment Request</span></a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="'records'" class="nav-link"><i class="fa fa-file-text" aria-hidden="true" style="width:40px;color:black;"></i>&nbsp;<span>Records</span></a>
+            </li>
+            
+           
+            
+        </ul>
+    </div>
+
+
+<!-- <div class="container">
+    <div class="sidebar">
+        <ul>
+            <li>
+                <a href="">
+                    <i class="fas fa-home"></i>
+                    <div class="title">Admin</div>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="'admin-dashboard'" class="nav-link">
+                    <img src="/assets/images/dashboard.png" alt="" width="16%">
+                    <div class="title">Dashboard</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="/assets/images/view-profile.jpg" alt="" width="16%">
+                    <div class="title">View Profile</div>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="'add-doctor'" class="nav-link">
+                    <i class="fa fa-user-md" aria-hidden="true" style="color:black;"></i>
+                    <div class="title">Add Doctor</div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="'update-doctor-details'" class="nav-link"><i class="fa fa-user-md" aria-hidden="true" style="color:black;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>Update Doctor</span></a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="'payment-request'" class="nav-link"><img src="/assets/images/payment-receipt.png" alt="" width="10%">&nbsp;&nbsp;&nbsp;<span>Payment Request</span></a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="'records'" class="nav-link"><i class="fa-solid fa-file" aria-hidden="true" style="color:black;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>Records</span></a>
+            </li>
+        </ul>
+    </div>
+</div> -->
+
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="user">
+                    
+                    
+                    <div class="img-case">
+                        <img src="/assets/images/user.png" alt="" style="height:50px;width:50px;position:relative;overflow:hidden;">
+                    </div>
+                    <h2 style="color:lightseagreen;" class="hospital">Hospital Management System</h2>
+                    <a href="" class="btn">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <router-outlet></router-outlet>
+    
+
+

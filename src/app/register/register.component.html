@@ -1,0 +1,142 @@
+<app-navbar></app-navbar>
+    <div class="registration_section d-flex justify-content-center">
+      <div class="container">
+        <div class="title">Registration</div>
+        <form [formGroup]="myform" (ngSubmit)="submit()">
+          
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Full Name</span>
+              <input type="text" placeholder="Enter your name" autocomplete="off" formControlName="fname">
+              <div *ngIf="fname?.touched && fname?.invalid">
+                  <span *ngIf="fname?.errors?.['required']" style="color:red;">*Please Enter Full Name</span>
+                  <span *ngIf="fname?.errors?.['pattern']" style="color:red;">*Name must contain only characters</span>
+              </div>
+            </div>
+
+            <div class="input-box">
+              <span class="details">Username</span>
+              <input type="text" id="username" placeholder="Enter your username" autocomplete="off" formControlName="username">
+              <div *ngIf="username?.touched && username?.invalid">
+                  <span *ngIf="username?.errors?.['required']" style="color:red;">*Please Enter Username</span>
+              </div>
+            </div>
+
+            <div class="input-box">
+              <span class="details">Email</span>
+              <input type="text" id="email" placeholder="Enter your email" autocomplete="off" formControlName="email">
+              <div *ngIf="email?.touched && email?.invalid">
+                  <span *ngIf="email?.errors?.['required']" style="color:red;">*Please Enter Email</span>
+                  <span *ngIf="email?.errors?.['pattern']" style="color:red;">*Email is Invalid</span>
+              </div>
+            </div>
+
+            <div class="input-box">
+              <span class="details">Phone Number</span>
+              <input type="text" id="contact" placeholder="Enter your number" autocomplete="off" formControlName="phone">
+             <div *ngIf="phone?.touched && phone?.invalid">
+                  <span *ngIf="phone?.errors?.['required']" style="color:red;">*Please Enter Contact Number</span>
+                  <span *ngIf="phone?.errors?.['pattern']" style="color:red;">*Contact Number is Invalid</span>
+              </div>
+            </div>
+
+            <div class="input-box">
+              <span class="details">Password</span>
+              <input type="password" id="password" placeholder="Enter your password" autocomplete="off" formControlName="password">
+              <div *ngIf="password?.touched && password?.invalid">
+                <span *ngIf="password?.errors?.['required']" style="color:red;">*Please Enter Password</span>
+                <span *ngIf="password?.errors?.['pattern']" style="color:red;">*Password is Invalid</span>
+              </div>
+            </div>
+
+            <div class="input-box">
+              <span class="details">Confirm password</span>
+              <input type="password" id="confirm_password" placeholder="Confirm your password" autocomplete="off" formControlName="cpassword">
+              <div *ngIf="cpassword?.touched && cpassword?.invalid">
+                <span *ngIf="cpassword?.errors?.['required']" style="color:red;">*Please Enter Confirm Password</span>
+                <span *ngIf="cpassword?.errors?.['pattern']" style="color:red;">*Confirm Password is invalid</span>
+              </div>
+            </div>
+
+            <div class="input-box">
+              <span class="details">Address</span>
+              <input type="text" placeholder="Enter your address" autocomplete="off" formControlName="address">
+              <div *ngIf="address?.touched && address?.invalid">
+                <span *ngIf="address?.errors?.['required']" style="color:red;">*Please Enter Address</span>
+              </div>
+            </div>
+
+            <div class="input-box">
+              <span class="details">Date of Birth</span>
+              <input type="date" placeholder="Enter your DOB" autocomplete="off" formControlName="dob">
+              <div *ngIf="dob?.touched && dob?.invalid">
+                <span *ngIf="dob?.errors?.['required']" style="color:red;">*Please Enter DOB</span>
+              </div>
+            </div>
+
+            <div class="input-box">
+                <span class="details">Age</span>
+                <input type="text" placeholder="Enter your age" autocomplete="off" formControlName="age">
+                <div *ngIf="age?.touched && age?.invalid">
+                  <span *ngIf="age?.errors?.['required']" style="color:red;">*Please Enter Age</span>
+                  <span *ngIf="age?.errors?.['pattern']" style="color:red;">*Age is Invalid</span>
+                </div>
+              </div>
+
+              <div class="input-box">
+                <span class="details">Blood Group</span>
+                <!-- <input type="text" placeholder="Enter your blood group" autocomplete="off" formControlName="bgroup"> -->
+                <select id="bgroup" formControlName="bgroup">
+                  
+                  <option value="bgroup" formControlName="bgroup">A +ve</option>
+                  <option value="bgroup" formControlName="bgroup">B +ve</option>
+                  <option value="bgroup" formControlName="bgroup">AB +ve</option>
+                  <option value="bgroup" formControlName="bgroup">O +ve</option>
+                  <option value="bgroup" formControlName="bgroup">A -ve</option>
+                  <option value="bgroup" formControlName="bgroup">B -ve</option>
+                  <option value="bgroup" formControlName="bgroup">AB -ve</option>
+                  <option value="bgroup" formControlName="bgroup">O -ve</option>
+                  
+                </select>
+                <div *ngIf="bgroup?.touched && bgroup?.invalid">
+                  <span *ngIf="bgroup?.errors?.['required']" style="color:red;">*Please Enter Blood Group</span>
+                </div>
+              </div>
+
+            <div class="input-box">
+              <span class="details">Image</span>
+              <input type="file" style="padding-top:3%;" formControlName="image">
+              <h5 id="imagecheck"></h5>
+            </div>
+          </div>
+          <div class="gender-details">
+            <span class="gender-title">Gender</span>
+            <div class="category">
+              <input type="radio" name="Gender" placeholder="gender" value="male" formControlName="gender">Male
+              <input type="radio" name="Gender" placeholder="gender" value="female" formControlName="gender">Female
+              <div *ngIf="gender?.touched && gender?.invalid">
+                <p *ngIf="gender?.errors?.['required']" style="color:red;">*Please Enter Gender</p>
+              </div>
+              <!-- <label for="">
+                <span class="dot one"></span>
+                <span class="gender">Male</span>
+              </label>
+              <label for="">
+                <span class="dot one"></span>
+                <span class="gender">Female</span>
+              </label> -->
+            </div>
+          </div>
+          
+          <div class="button">
+            <button class="btn registerbtn" [disabled]="myform.invalid">Register</button>
+            <!-- <input type="submit" name="register" value="Register" id="submitbtn"> -->
+          </div>
+        </form>
+        
+        
+      </div>
+    </div>
+
+   
+   

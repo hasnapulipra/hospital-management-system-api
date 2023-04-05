@@ -1,0 +1,205 @@
+.registration_section{
+    
+    /* height:100vh; */
+    
+    align-items: center;
+    padding:10px;
+    margin-top: 5%;
+    margin-bottom: 30%;
+    /* background: linear-gradient(135deg,#71b7e6,#9b59b6); */
+    
+}
+.registration_section .container{
+    max-width:700px;
+    width:100%;
+    background: #fff;
+    padding:25px 30px;
+    border-radius:5px;
+    /* border:1px solid #607d8b; */
+
+}
+.registration_section .container .title{
+    font-size:25px;
+    font-weight:500;
+    position:relative;
+    color: #607d8b;
+}
+.registration_section .error_message{
+    font-size:80%;
+}
+.registration_section .container .title::before{
+    content: '';
+    position: absolute;
+    height:3px;
+    width:25%;
+    background: lightseagreen;
+    left:0;
+    bottom:0;
+    top: 0.9em;
+}
+.registration_section .container form .user-details{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:20px 0 12px 0;
+
+}
+.registration_section .container form .user-details .input-box{
+    width:calc(100% / 2 - 20px);
+    margin-bottom:15px;
+    
+
+}
+.registration_section span{
+    font-size:16px;
+}
+.registration_section .container form .user-details .input-box .details{
+    font-weight:500;
+    margin-bottom:5px;
+    color:#607d8b;
+    display:block;
+}
+.registration_section .container form .user-details .input-box input{
+    height:45px;
+    width:100%;
+    outline:none;
+    border-radius: 5px;
+    /* padding:2%; */
+    padding-left:15px;
+    border: 1px solid #607d8b;
+    color:#607d8b;
+    background: transparent;
+    font-size: 16px;
+    /* border-bottom-width:2px;
+    transition: all 0.3s ease; */
+}
+.registration_section .container form .user-details .input-box #bgroup{
+    height:45px;
+    width:100%;
+    outline:none;
+    border-radius: 5px;
+    /* padding:2%; */
+    padding-left:15px;
+    border: 1px solid #607d8b;
+    color:#607d8b;
+    background: transparent;
+    font-size: 16px;
+    
+}
+
+.registration_section .container form .user-details .input-box input:focus,
+.registration_section .container form .user-details .input-box input:valid{
+    border-color: grey;
+}
+.registration_section .container form .gender-details .gender-title{
+    font-size:16px;
+    font-weight:500;
+    color:#607d8b;
+
+}
+.registration_section .container form .gender-details .category{
+    width:30%;
+    display:flex;
+    justify-content: space-between;
+    color:#607d8b;
+    margin:14px 0;
+}
+.registration_section .container form .registerbtn
+{
+
+    background: lightseagreen;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px 40px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.registration_section .container form .registerbtn:hover{
+    background:  white;
+    color:lightseagreen;
+    border:1px solid lightseagreen;
+}
+@media (max-width: 584px){
+    .registration_section{
+        margin-top:40%;
+        margin-bottom:50%;  
+    }
+    .registration_section .container{
+        
+       
+        max-width:100%;
+    } 
+    .registration_section .container form .user-details .input-box{
+        width:100%;
+        margin-bottom:15px;
+    }
+    .registration_section .container form .gender-details .category{
+        width:50%;
+    }
+    .registration_section .container form .user-details .input-box .details{
+        max-height: 300px;
+        overflow-y:scroll;
+    }
+    .registration_section .container form .user-details .input-box .details::-webkit-scrollbar{
+        width:0;
+    }
+    .registration_section .container .title::before{
+        content: '';
+        position: absolute;
+        height:3px;
+        width:45%;
+        background: lightseagreen;
+        left:0;
+        bottom:0;
+    }
+
+}
+@media(max-width:425px){
+    .registration_section{
+        margin-top:3%;
+    }
+    .registration_section .container .title::before{
+        content: '';
+        position: absolute;
+        height:3px;
+        width:90%;
+        background: lightseagreen;
+        left:0;
+        bottom:0;
+    }
+    .registration_admin_section .contentBx .formBx .inputBx .registerbtn{
+        width:60%;
+    }
+}
+@media(max-width:375px){
+    .registration_section #usercheck{
+        font-size:64%;
+    }
+}
+@media(max-width:320px){
+
+    .registration_section .container .title{
+        font-size:21px;
+        margin-top:16%;
+    }
+    .registration_admin_section .contentBx .formBx .inputBx input {
+        font-size: 14px;
+       
+    }
+    .registration_admin_section .contentBx .formBx .inputBx span {
+        font-size: 14px;
+       
+    }
+    .registration_section .container .title::before{
+        content: '';
+        position: absolute;
+        height:3px;
+        width:100%;
+        background: lightseagreen;
+        left:0;
+        bottom:0;
+    }
+}

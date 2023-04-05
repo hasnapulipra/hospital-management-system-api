@@ -1,0 +1,166 @@
+.container{
+    position: absolute;
+    right: 10%;
+    width: 58vw;
+    background: white;
+    margin-top: 10%;
+}
+.container .content{
+    position: relative;
+    margin-top: 0vh;
+    min-height: 90vh;
+    
+}
+h3{
+  font-size: 1.8em!important;
+  font-family: 'Poppins', sans-seriff!important;
+}
+h6{
+  font-size: 1rem!important;
+  font-family: 'Poppins', sans-seriff!important;
+}
+.btn{
+  color:white;
+  background-color:rgb(19, 187, 179);
+}
+.btn:hover{
+  color:white;
+  background: rgb(19, 187, 179);
+  padding:3px 8px;
+  border:2px solid white;
+}
+ .table{
+   
+    border-collapse:collapse;
+}
+ .table td,.table th{
+    padding:12px 15px;
+    border:1px solid #ddd;
+    text-align: left;
+    
+    font-size:16px;
+}
+.table tbody tr:hover{
+    background: lightseagreen;
+    color:#fff;
+}
+ 
+.doctor-profile{
+    display:flex;
+    justify-content: space-between;
+
+}
+
+.table td,tr{
+    /* border: none; */
+}
+a{
+    text-decoration: none;
+   
+}
+
+
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #1abc9c;
+  text-align: center;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+
+
+
+
+@media(max-width:958px){
+    
+     .table td, .table th{
+        font-size:12px;
+    } 
+}
+
+
+
+
+
+@media(max-width:425px){
+ .table {
+    margin-left: 0%;
+    width: 100%;
+    border-collapse: collapse;
+}
+ h2 {
+    font-size: 20px;
+    margin-left: 15%;
+}
+.container{
+    margin-top: 25%;
+}
+}
+
